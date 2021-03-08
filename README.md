@@ -152,3 +152,155 @@
 </body>
   
 </html>
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+#logo{
+    margin-top: 1px;
+    float: left;
+    cursor: pointer;
+}
+.navbar{
+    height:60px;
+    margin-top: 10px;
+    margin-right:5px;
+    margin-left:5px;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+.navbar ul{
+/*     margin-top:20px; */
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 10px 25px;
+    font-size:larger;
+    
+}
+.navbar li a{
+    padding: 1px 1px;
+    text-decoration: none;
+    color: rgb(241 235 235);
+}
+.navbar li a:hover{
+    color: rgb(235, 32, 32)
+}
+.search{
+    float:left;
+    color: white;
+    
+}
+.navbar input{
+    margin-top:5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 17px;
+}
+
+#navbardrop:hover{
+    color: red;
+}
+
+.dropdown-menu:hover{
+    background-color: rgb(14, 13, 14);
+}
+
+
+.cards{
+    margin-top: 30px;  
+    margin-left: 13px;
+    margin-right:13px;
+    max-width: 10000px;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
+    gap:20px;
+    font-family: 'Ubuntu', sans-serif ;
+    
+    
+    
+}
+
+.card{
+    /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+}
+
+.card__image{
+
+    display: block;
+    
+}
+
+.crad__container{
+    margin-top:0px;
+    line-height: 0.5;
+    font-size: 0.9em;
+    padding: 30px;
+    background: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.crad__container:hover{
+    color:red;
+   
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+    
+}
+
+.card__info{
+    padding: 15px;
+    /* display: flex; */
+    justify-content: space-between;
+    background: #fffcfc00;
+    font-size: 0.8em;
+    border-bottom: 2px solid #fcfbfb;
+    float: right;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.cards:hover{
+    background-color:transparent
+}
+
+.card__name{
+    float: right;
+    font-size:20px;
+
+}
+
+.cards .card h6{
+    margin-top:15px;
+    color:#74b674;
+}
+
+.foot{
+    /* text-align: center; */
+    font-size: 20px;
+    float: left;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+   
+}
